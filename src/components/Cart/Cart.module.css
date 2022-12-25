@@ -1,0 +1,142 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.333);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  z-index: 101;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.746);
+  padding: 1rem;
+  overflow: auto;
+}
+/* .modal::-webkit-scrollbar {
+  display: none;
+} */
+.modal h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.cart-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.list__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.list__items h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.list__items .image {
+  width: 20%;
+  height: 20%;
+  margin-right: 1rem;
+}
+.list__items .name {
+  width: 40%;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.list__items .price {
+  width: 20%;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.list__items .multiply{
+  width: 17%;
+  font-size: 3rem;
+  font-weight: bold;
+  transition : all 1s ease;         
+}
+.list__items .multiply:hover{
+  transform: rotate(180deg);
+  color: red;
+}
+
+.list__items .quantity {
+  width: 20%;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__items .quantity .decArrow,
+.incArrow {
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.list__items .quantity input {
+  width: 4rem;
+  text-align: center;
+  border-bottom: 2px solid red;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.order__sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.order__sections .totalAmount {
+  width: 40%;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.order__sections .buttons {
+  display: flex;
+  gap: 2rem;
+  font-size: 1em;
+}
+
+.emptyCart{
+  width: 100%;
+  height: 70rem;
+  text-align: center;
+}
+
+.emptyCart img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
